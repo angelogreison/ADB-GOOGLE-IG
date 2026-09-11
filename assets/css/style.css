@@ -16,7 +16,7 @@
   --petroleum:#356469;
   --petroleum-dark:#1A4F54;
   --petroleum-light:#6FA0A5;
-  --whatsapp:#0F776B;
+  --whatsapp:#25D366;
   --status-available:#22C55E;
   --status-low:#FACC15;
   --status-last:#F97316;
@@ -79,7 +79,7 @@ img{max-width:100%;display:block;}
 .btn-petroleum:hover{background:var(--petroleum-dark);transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(53,100,105,.45);}
 .btn-petroleum svg{fill:var(--white);}
 .btn-wa{background:var(--whatsapp);color:#fff;}
-.btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(15,119,107,.45);}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(37,211,102,.45);}
 .btn-wa svg{fill:#fff;}
 
 /* ---------- NAV ---------- */
