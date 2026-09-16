@@ -61,7 +61,25 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/pautas-convivencia.html</loc>
+    <loc>https://artesanadelbarro.com.ar/modelado.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://artesanadelbarro.com.ar/alfareria.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://artesanadelbarro.com.ar/regala-una-clase.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://artesanadelbarro.com.ar/clase-de-prueba.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   main.js — Artesana del Barro v20260915a
+   main.js — Artesana del Barro v20260915d
    ========================================================================== */
 
 /* ---------- 1. Deferred analytics (GA4 + Meta Pixel) ----------
@@ -70,6 +70,8 @@
 (function () {
   var video = document.getElementById('heroVideo');
   if (!video) return;
+  /* prefers-reduced-motion: no autoplay del video decorativo */
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var videoObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -272,8 +274,39 @@
   };
 
   window.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+  /* Focus trap: mantene el Tab dentro del modal mientras está abierto */
+  window.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab' || !modal || !modal.classList.contains('active')) return;
+    var focusables = modal.querySelectorAll('button, input, select, textarea, a[href]');
+    if (!focusables.length) return;
+    var first = focusables[0];
+    var last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
   document.addEventListener('click', function (e) {
     if (modal && e.target === modal) closeModal();
   });
+})();
+
+/* ---------- Hero rating: ocultar el pill estático al cargar el widget real de Elfsight ---------- */
+(function () {
+  var fallback = document.getElementById('hero-rating-fallback');
+  var elfsightBox = document.getElementById('hero-elfsight');
+  if (!fallback || !elfsightBox) return;
+
+  function hideFallback() {
+    fallback.style.display = 'none';
+  }
+
+  if (elfsightBox.children.length > 0) { hideFallback(); return; }
+
+  var observer = new MutationObserver(function () {
+    if (elfsightBox.children.length > 0) {
+      hideFallback();
+      observer.disconnect();
+    }
+  });
+  observer.observe(elfsightBox, { childList: true, subtree: true });
 })();
 

@@ -36,7 +36,7 @@
 <!-- Fuentes: carga no bloqueante (media=print + onload) -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,700&family=Montserrat:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,700&family=Montserrat:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/style.css?v=20260915a">
+<link rel="stylesheet" href="assets/css/style.css?v=20260915d">
 <!-- DNS prefetch para terceros -->
 <link rel="dns-prefetch" href="https://elfsightcdn.com">
 
@@ -81,8 +81,8 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -34.6149,
-    "longitude": -58.4321
+    "latitude": -34.6152345,
+    "longitude": -58.4344835
   },
   "contactPoint": {
     "@type": "ContactPoint",
@@ -95,15 +95,39 @@
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
+      "dayOfWeek": "Monday",
+      "opens": "14:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "16:00",
       "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "15:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "14:00",
+      "closes": "20:30"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": "Saturday",
       "opens": "11:00",
-      "closes": "19:00"
+      "closes": "16:00"
     }
   ],
   "sameAs": [
@@ -143,7 +167,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "120",
+    "reviewCount": "35",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -171,14 +195,48 @@
   }
 }
 </script>
+
+<!-- Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-q", ".faq-a"]
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Dónde queda el taller de cerámica y cómo llego?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Estamos en Caballito, en el límite con Almagro, a 2 cuadras de la estación Río de Janeiro del Subte Línea A y a 1 cuadra del Parque Rivadavia. Es una zona muy accesible desde Palermo, Villa Crespo, Boedo, Flores, San Cristóbal y Balvanera."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los horarios de las clases?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Hay turnos de lunes a sábado: de lunes a viernes entre las 9:30 y las 20:30, y los sábados entre las 11:00 y las 16:00. Cada turno dura 2 horas y la disponibilidad exacta de cada día está en la grilla de horarios."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuestan las clases de cerámica?",
+      "acceptedAnswer": {"@type": "Answer", "text": "El Plan Modelado (modelado manual en mesa) cuesta $79.000 por mes y el Plan Torno (alfarería en torno alfarero) $90.000 por mes. Ambos incluyen pasta, herramientas, esmaltes y horneadas: no hay materiales extra que comprar."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito experiencia previa o materiales?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Las clases están diseñadas tanto para principiantes como para quienes ya tienen experiencia, y todo el material está incluido. Las profesoras te guían paso a paso en grupos reducidos."}
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="nav" id="navbar">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo"><img src="assets/logo-footer.webp?v=20260911" alt="Artesana del Barro" width="260" height="76" fetchpriority="high"></a>
+    <a href="/" class="nav-logo"><img src="assets/logo-footer.webp?v=20260911" alt="Artesana del Barro" width="260" height="76" fetchpriority="high"></a>
     <ul class="nav-links">
-      <li><a href="index.html#taller">El Taller</a></li>
+      <li><a href="/#taller">El Taller</a></li>
       <li><a href="planes.html">Planes y Horarios</a></li>
       <li><a href="torno-alfarero.html">Torno</a></li>
       <li><a href="horneadas.html">Horneadas</a></li>
@@ -197,7 +255,7 @@
 </header>
 
 <nav class="mobile-menu" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
-  <a href="index.html#taller">El Taller</a>
+  <a href="/#taller">El Taller</a>
   <a href="planes.html">Planes y Horarios</a>
   <a href="torno-alfarero.html">Torno</a>
   <a href="horneadas.html">Horneadas</a>
@@ -223,26 +281,27 @@
     <div class="hero-content">
       <div class="hero-content-inner">
         <span class="hero-badge"><svg class="ico" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> TALLER DE CERÁMICA EN CABALLITO, LÍMITE CON ALMAGRO</span>
-        <h1>Taller de cerámica en Caballito<span class="hero-title-sub">Bajá el ritmo, hundí las manos en el barro, creá algo tuyo.</span></h1>
-        <p class="sub">Venís, aprendés alfarería en torno o modelado, trabajás con barro y te llevás algo creado por vos. Materiales y horneadas incluidas. No necesitás experiencia previa.</p>
+        <h1>Taller de cerámica en Caballito: creá algo tuyo</h1>
+        <p class="sub">Bajá el ritmo, hundí las manos en el barro y creá algo con tus propias manos. Elegí entre <a href="torno-alfarero.html" style="color:inherit;text-decoration:underline;">alfarería en torno</a> o <a href="modelado.html" style="color:inherit;text-decoration:underline;">modelado manual</a> en grupos reducidos, con materiales y horneadas incluidas. No necesitás experiencia previa.</p>
         <div class="hero-buttons">
           <a href="planes.html#horarios" class="btn btn-primary">Quiero empezar</a>
           <a href="planes.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">Conocer los planes</a>
         </div>
         <div class="hero-trust">
-          <div class="elfsight-app-b1a3b4cf-fd1f-45a4-a4f1-5e0f922ed75b" data-elfsight-app-lazy></div>
+          <span class="trust-pill" id="hero-rating-fallback"><svg class="ico ico-fill" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9 · 35 reseñas en Google</span>
+          <div class="elfsight-app-b1a3b4cf-fd1f-45a4-a4f1-5e0f922ed75b" id="hero-elfsight" data-elfsight-app-lazy></div>
         </div>
       </div>
     </div>
     <div class="scroll-progress-bar"><div class="scroll-progress-fill" id="progressFill"></div></div>
     <div class="marquee">
       <div class="marquee-track">
-        <span><svg class="ico" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></svg> Último cupo: Viernes 14hs (Alfarería)</span>
+        <span><svg class="ico" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></svg> Último cupo: Viernes 14hs y Viernes 18:30hs</span>
         <span><svg class="ico" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> Pocos cupos: Lunes 14hs y Jueves 18hs</span>
         <span><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg> Disponible: Martes 18:30hs</span>
         <span><svg class="ico ico-outline" viewBox="0 0 24 24"><path d="M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8"/><path d="M10 5H8a2 2 0 0 0 0 4h.68"/><path d="M14 2v5.632c0 .424.272.795.652.982A6 6 0 0 1 18 14c0 4-3 7-5 8"/><path d="M14 5h2a2 2 0 0 1 0 4h-.68"/><path d="M18 22H6"/><path d="M9 2h6"/></svg> Más de 120 alumnas ya aprendieron cerámica en nuestro taller de Caballito</span>
         <span><svg class="ico" viewBox="0 0 24 24"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg> Servicio de horneadas para ceramistas independientes</span>
-        <span><svg class="ico" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></svg> Último cupo: Viernes 14hs (Alfarería)</span>
+        <span><svg class="ico" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></svg> Último cupo: Viernes 14hs y Viernes 18:30hs</span>
         <span><svg class="ico" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> Pocos cupos: Lunes 14hs y Jueves 18hs</span>
         <span><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg> Disponible: Martes 18:30hs</span>
         <span><svg class="ico ico-outline" viewBox="0 0 24 24"><path d="M10 2v5.632c0 .424-.272.795-.653.982A6 6 0 0 0 6 14c.006 4 3 7 5 8"/><path d="M10 5H8a2 2 0 0 0 0 4h.68"/><path d="M14 2v5.632c0 .424.272.795.652.982A6 6 0 0 1 18 14c0 4-3 7-5 8"/><path d="M14 5h2a2 2 0 0 1 0 4h-.68"/><path d="M18 22H6"/><path d="M9 2h6"/></svg> Más de 120 alumnas ya aprendieron cerámica en nuestro taller de Caballito</span>
@@ -274,6 +333,10 @@
         <p class="plan-picker-price">Te ayudamos a decidir</p>
         <a href="https://wa.me/5491156206435?text=%C2%A1Hola%20Mariana!%20No%20s%C3%A9%20si%20empezar%20con%20Modelado%20o%20Torno,%20%C2%BFme%20ayud%C3%A1s%20a%20elegir?%20%F0%9F%A4%94" target="_blank" class="btn btn-wa">Consultar por WhatsApp</a>
       </div>
+    </div>
+    <div class="schedule-note reveal" style="text-align:center;">
+      <p style="margin-bottom:10px;">¿Preferís probar antes de anotarte? <a href="clase-de-prueba.html" style="color:var(--terracotta);text-decoration:underline;">Vení a una clase de prueba</a></p>
+      <p>¿Es para regalar? <a href="regala-una-clase.html" style="color:var(--terracotta);text-decoration:underline;">Regalá una clase de cerámica</a></p>
     </div>
   </div>
 </section>
@@ -357,6 +420,34 @@
   </div>
 </section>
 
+<!-- PARA QUIÉN ES -->
+<section class="services" id="para-quien">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Para quién es este taller</span>
+      <h2>¿Qué buscás hoy?</h2>
+    </div>
+    <div class="services-grid stagger">
+      <div class="service-card sc-1 stagger-item">
+        <div><h3>Es tu primera vez con el barro</h3><p>Sin experiencia previa: arrancá con modelado manual en mesa o probá una clase de prueba antes de anotarte al plan.</p></div>
+        <a href="clase-de-prueba.html">Probar una clase →</a>
+      </div>
+      <div class="service-card sc-2 stagger-item">
+        <div><h3>Querés aprender torno</h3><p>Alfarería en torno alfarero profesional: centrado, apertura y levantado de paredes, con 4 tornos en el taller.</p></div>
+        <a href="torno-alfarero.html">Ver el torno →</a>
+      </div>
+      <div class="service-card sc-3 stagger-item">
+        <div><h3>Ya creás tus propias piezas</h3><p>Usá nuestro horno de 70 litros: servicio de horneadas para ceramistas y artesanas independientes de toda CABA.</p></div>
+        <a href="horneadas.html">Horneadas →</a>
+      </div>
+      <div class="service-card sc-4 stagger-item">
+        <div><h3>Buscás un regalo</h3><p>Regalá una clase de cerámica: modelado a mano o torno, con todo incluido y turnos de lunes a sábado.</p></div>
+        <a href="regala-una-clase.html">Regalá una clase →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CASOS DE ÉXITO / TESTIMONIOS -->
 <section class="testimonials">
   <div class="container">
@@ -367,6 +458,34 @@
     </div>
     <!-- Elfsight cargado lazy: el script se inyecta desde main.js cuando esta sección entra en viewport -->
     <div id="elfsight-reviews-container" class="elfsight-app-a447564c-d6af-4c94-950a-2369b8172158" aria-label="Reseñas de Google de Artesana del Barro" style="min-height:200px;"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>¿Tenés dudas antes de empezar?</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q"><span>¿Dónde queda el taller de cerámica y cómo llego?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Estamos en Caballito, en el límite con Almagro, a 2 cuadras de la estación Río de Janeiro del Subte Línea A y a 1 cuadra del Parque Rivadavia. Es una zona muy accesible desde Palermo, Villa Crespo, Boedo, Flores, San Cristóbal y Balvanera.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>¿Cuáles son los horarios de las clases?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Hay turnos de lunes a sábado: de lunes a viernes entre las 9:30 y las 20:30, y los sábados entre las 11:00 y las 16:00. Cada turno dura 2 horas. Podés ver la <a href="planes.html#horarios" style="color:var(--terracotta);text-decoration:underline;">grilla completa de horarios y cupos</a>.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>¿Cuánto cuestan las clases de cerámica?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>El Plan Modelado (modelado manual en mesa) cuesta $79.000 por mes y el Plan Torno (alfarería en torno alfarero) $90.000 por mes. Ambos incluyen pasta, herramientas, esmaltes y horneadas: no hay materiales extra que comprar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span>¿Necesito experiencia previa o materiales?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>No. Las clases están diseñadas tanto para principiantes como para quienes ya tienen experiencia, y todo el material está incluido. Las profesoras te guían paso a paso en grupos reducidos.</p></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -410,7 +529,7 @@
       <div>
         <div class="foot-title">Links rápidos</div>
         <ul class="foot-links">
-          <li><a href="index.html#taller">El Taller</a></li>
+          <li><a href="/#taller">El Taller</a></li>
           <li><a href="planes.html">Planes y Horarios</a></li>
           <li><a href="torno-alfarero.html">Torno Alfarero</a></li>
           <li><a href="horneadas.html">Servicio de Horneadas</a></li>
@@ -424,7 +543,7 @@
         <p><svg class="ico" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg> Caballito, límite con Almagro, CABA, Argentina</p>
         <p><svg class="ico ico-outline" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg> <a href="mailto:artesanadelbarro@gmail.com">artesanadelbarro@gmail.com</a></p>
         <p><svg class="ico" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg> <a href="tel:+5491156206435">+54 9 11 5620-6435</a></p>
-        <p><svg class="ico ico-outline" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></svg> Lun a Sáb · 09:00 - 20:30hs · Dom cerrado</p>
+        <p><svg class="ico ico-outline" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></svg> Clases de Lun a Sáb por turnos · Dom cerrado</p>
         <a href="https://wa.me/5491156206435" target="_blank" class="btn btn-wa" style="margin-top:8px;">
           <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           Contáctanos
@@ -437,6 +556,6 @@
 
 <div class="sticky-cta"><a href="planes.html#horarios">Ver horarios de clases</a></div>
 
-<script src="assets/js/main.js?v=20260915a" defer></script>
+<script src="assets/js/main.js?v=20260915d" defer></script>
 </body>
 </html>
