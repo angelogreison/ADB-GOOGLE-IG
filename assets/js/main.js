@@ -1,5 +1,5 @@
 /* ==========================================================================
-   main.js — Artesana del Barro v20260915d
+   main.js — Artesana del Barro v20260915b
    ========================================================================== */
 
 /* ---------- 1. Deferred analytics (GA4 + Meta Pixel) ----------
@@ -62,6 +62,26 @@
   }, { rootMargin: '200px' });
 
   observer.observe(container);
+})();
+
+/* ---------- 2b. Hero rating fallback ----------
+   El pill de estrellas "4.9 en Google" es provisional: cuando el
+   widget de Elfsight del hero renderiza contenido real, se oculta. */
+(function () {
+  var pill = document.getElementById('hero-rating-fallback');
+  var hero = document.getElementById('hero-elfsight');
+  if (!pill || !hero) return;
+
+  function check() {
+    if (hero.childElementCount > 0 && hero.offsetHeight > 40) {
+      pill.style.display = 'none';
+      mo.disconnect();
+    }
+  }
+
+  var mo = new MutationObserver(check);
+  mo.observe(hero, { childList: true, subtree: true });
+  check();
 })();
 
 /* ---------- 3. Hero Video lazy load ----------
@@ -287,26 +307,5 @@
   document.addEventListener('click', function (e) {
     if (modal && e.target === modal) closeModal();
   });
-})();
-
-/* ---------- Hero rating: ocultar el pill estático al cargar el widget real de Elfsight ---------- */
-(function () {
-  var fallback = document.getElementById('hero-rating-fallback');
-  var elfsightBox = document.getElementById('hero-elfsight');
-  if (!fallback || !elfsightBox) return;
-
-  function hideFallback() {
-    fallback.style.display = 'none';
-  }
-
-  if (elfsightBox.children.length > 0) { hideFallback(); return; }
-
-  var observer = new MutationObserver(function () {
-    if (elfsightBox.children.length > 0) {
-      hideFallback();
-      observer.disconnect();
-    }
-  });
-  observer.observe(elfsightBox, { childList: true, subtree: true });
 })();
 
