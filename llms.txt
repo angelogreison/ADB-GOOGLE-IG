@@ -8,32 +8,31 @@ En búsquedas frecuentes, "curso de cerámica", "clases de cerámica" y "taller 
 
 ## Páginas
 
-- [Inicio](https://artesanadelbarro.com.ar/): Presentación del taller, su espacio, por qué elegirlo y testimonios reales de alumnas.
-- [Planes y Horarios](https://artesanadelbarro.com.ar/planes.html): Servicios del taller, grilla de horarios de clases (lunes a sábado, con reserva por WhatsApp) y planes con precios (Plan Modelado y Plan Torno / alfarería en torno).
-- [Alfarería](https://artesanadelbarro.com.ar/alfareria.html): Qué es la alfarería, sus dos técnicas (modelado manual y torno alfarero) y cómo empezar clases en Caballito sin experiencia previa.
-- [Modelado](https://artesanadelbarro.com.ar/modelado.html): Página dedicada al Plan Modelado — qué es el modelado manual, técnicas de pellizco, chorizo y plancha, precio y preguntas frecuentes.
+- [Inicio](https://artesanadelbarro.com.ar/): Taller de cerámica en Caballito — clases de modelado manual y torno alfarero, planes desde $79.000/mes con todo incluido.
+- [Planes y Horarios](https://artesanadelbarro.com.ar/planes.html): Plan Modelado $79.000/mes y Plan Torno $90.000/mes, 4 clases de 2 horas por mes con materiales, esmaltes y horneadas incluidos; grilla de turnos y forma de reservar por WhatsApp.
 - [Torno Alfarero](https://artesanadelbarro.com.ar/torno-alfarero.html): Página dedicada al Plan Torno — qué es el torno alfarero, cómo son las clases, precio y preguntas frecuentes sobre esta técnica.
-- [Regalá una Clase](https://artesanadelbarro.com.ar/regala-una-clase.html): Cómo regalar una clase de cerámica (modelado o torno), qué incluye la clase regalo y cómo coordinar el turno por WhatsApp.
-- [Clase de Prueba](https://artesanadelbarro.com.ar/clase-de-prueba.html): Cómo es la clase de prueba de cerámica: 2 horas creando tu primera pieza, sin experiencia previa; si te anotás al plan, se resta de la diferencia del mes.
-- [Horneadas](https://artesanadelbarro.com.ar/horneadas.html): Servicio de horneado de cerámica para ceramistas y artesanas independientes: capacidad del horno, tipos de cocción y cómo reservar.
-- [Blog](https://artesanadelbarro.com.ar/blog.html): Artículos técnicos sobre cerámica y alfarería en torno, escritos desde el taller.
-  - [Cómo es tu primera clase de cerámica sin experiencia previa](https://artesanadelbarro.com.ar/primera-clase-de-ceramica.html)
-  - [Modelado a mano vs. torno alfarero: cuál elegir](https://artesanadelbarro.com.ar/modelado-manual-vs-torno-alfarero.html)
-  - [Del barro a la pieza terminada: las etapas de la cerámica](https://artesanadelbarro.com.ar/etapas-de-la-ceramica.html)
-  - [Qué se puede hacer en el torno alfarero](https://artesanadelbarro.com.ar/que-se-hace-en-torno-alfarero.html)
-- [Contacto](https://artesanadelbarro.com.ar/contacto.html): Galería de fotos, ubicación con mapa, horarios de atención y preguntas frecuentes sobre clases y reservas.
+- [Alfarería](https://artesanadelbarro.com.ar/alfareria.html): Qué es la alfarería y cómo son las clases de alfarería en Caballito — modelado manual y torno alfarero, desde $79.000/mes con todo incluido.
+- [Modelado](https://artesanadelbarro.com.ar/modelado.html): Página dedicada al Plan Modelado — técnicas de pellizco, chorizo y plancha en mesa, precio y cómo son las clases de modelado manual.
+- [Clase de Prueba](https://artesanadelbarro.com.ar/clase-de-prueba.html): Clase de prueba de 2 horas para conocer el taller sin experiencia previa; modelado $27.000, torno alfarero $37.000; si después te anotás a un plan, se descuenta del precio.
+- [Regalá una Clase](https://artesanadelbarro.com.ar/regala-una-clase.html): Gift card por clase de prueba (modelado $27.000, torno $37.000) o por un mes del plan elegido al mismo precio del plan; la persona elige su turno y coordinamos por WhatsApp.
+- [Horneadas](https://artesanadelbarro.com.ar/horneadas.html): Servicio de horneadas (quemas) para ceramistas independientes — horno propio de 70 litros, bizcocho de loza a 1.060°C, gres Cono 5 y esmaltado.
+- [Blog](https://artesanadelbarro.com.ar/blog.html): Artículos y guías sobre cerámica y alfarería escritos desde el taller.
+- [Primera clase de cerámica](https://artesanadelbarro.com.ar/primera-clase-de-ceramica.html): Cómo es tu primera clase de cerámica, paso a paso, y por qué no necesitás experiencia previa.
+- [Modelado manual vs torno alfarero](https://artesanadelbarro.com.ar/modelado-manual-vs-torno-alfarero.html): Diferencias reales entre las dos técnicas y cuál conviene según la pieza que querés hacer.
+- [Etapas de la cerámica](https://artesanadelbarro.com.ar/etapas-de-la-ceramica.html): Las etapas del proceso cerámico: modelado, secado, bizcocho, esmaltado y horneada final.
+- [Qué se hace en torno alfarero](https://artesanadelbarro.com.ar/que-se-hace-en-torno-alfarero.html): Qué piezas se hacen en el torno y cómo es el proceso de centrar, abrir y levantar paredes.
+- [Pautas del Taller](https://artesanadelbarro.com.ar/pautas-convivencia.html): Pautas de convivencia, asistencia, seña y qué pasa con tus piezas si dejás de asistir.
+- [Contacto](https://artesanadelbarro.com.ar/contacto.html): Ubicación en Caballito, horarios por turnos, preguntas frecuentes y WhatsApp.
 
-## Planes y precios
+## El taller
 
-- Plan Modelado (modelado manual en mesa): $79.000/mes — 4 clases mensuales de 2 horas, materiales, herramientas, esmaltes y horneadas incluidos.
-- Plan Torno (torno alfarero): $90.000/mes — 4 clases mensuales de 2 horas, 100% enfocadas en torno alfarero profesional, todo incluido.
-- Servicio de horneadas para ceramistas externos: horno de 70 litros (40x40x45cm), bizcocho de loza a 1.060°C, gres a Cono 5, esmaltado para loza.
-
-## Datos de contacto
-
-- Dirección: Caballito, límite con Almagro, CABA (CP 1405), Argentina
-- WhatsApp: +54 9 11 5620-6435
+- Nombre: Artesana del Barro
+- Dueña y profesora: Mariana
+- Ubicación: Caballito, límite con Almagro, CABA, Buenos Aires, Argentina
+- Teléfono/WhatsApp: +54 9 11 5620-6435
 - Email: artesanadelbarro@gmail.com
-- Instagram: https://www.instagram.com/artesanadelbarro
-- TikTok: https://www.tiktok.com/@artesanadelbarro
+- Instagram: @artesanadelbarro · TikTok: @artesanadelbarro
 - Horario de atención: Clases de lunes a sábado por turnos (lun 14-16 y 18:30-20:30; mar 9:30-11:30 y 18:30-20:30; mié 16-20; jue 15:30-20; vie 14-16 y 18:30-20:30; sáb 11-13 y 14-16), Domingos cerrado
+- Planes y precios: Plan Modelado $79.000/mes; Plan Torno $90.000/mes; clase de prueba de modelado $27.000; clase de prueba de torno alfarero $37.000; gift cards por clase de prueba o por un mes del plan elegido, al mismo precio del plan.
+- Reservas: por WhatsApp, con el 50% de seña; consultá formas de pago por WhatsApp.
+- Reseñas: 4.9 en Google.

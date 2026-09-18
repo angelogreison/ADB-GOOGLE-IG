@@ -1,5 +1,5 @@
 /* ==========================================================================
-   main.js — Artesana del Barro v20260915b
+   main.js — Artesana del Barro v20260915a
    ========================================================================== */
 
 /* ---------- 1. Deferred analytics (GA4 + Meta Pixel) ----------
@@ -64,34 +64,12 @@
   observer.observe(container);
 })();
 
-/* ---------- 2b. Hero rating fallback ----------
-   El pill de estrellas "4.9 en Google" es provisional: cuando el
-   widget de Elfsight del hero renderiza contenido real, se oculta. */
-(function () {
-  var pill = document.getElementById('hero-rating-fallback');
-  var hero = document.getElementById('hero-elfsight');
-  if (!pill || !hero) return;
-
-  function check() {
-    if (hero.childElementCount > 0 && hero.offsetHeight > 40) {
-      pill.style.display = 'none';
-      mo.disconnect();
-    }
-  }
-
-  var mo = new MutationObserver(check);
-  mo.observe(hero, { childList: true, subtree: true });
-  check();
-})();
-
 /* ---------- 3. Hero Video lazy load ----------
    preload="none" en el HTML evita descargar el video en el load critico.
    Se activa cuando el video entra en viewport (mejora LCP). */
 (function () {
   var video = document.getElementById('heroVideo');
   if (!video) return;
-  /* prefers-reduced-motion: no autoplay del video decorativo */
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var videoObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -279,12 +257,12 @@
 
     if (!selectedSchedule) return;
 
-    var message = 'Hola! Me gustaria reservar un lugar:\n\n'
+    var message = '¡Hola! Me gustaría reservar un lugar:\n\n'
       + 'Nombre: ' + name + '\n'
       + 'Email: ' + email + '\n'
       + 'WhatsApp: ' + whatsapp + '\n'
       + 'Clase: ' + selectedSchedule.category + '\n'
-      + 'Dia: ' + selectedSchedule.day + '\n'
+      + 'Día: ' + selectedSchedule.day + '\n'
       + 'Horario: ' + selectedSchedule.start + ' - ' + selectedSchedule.end + 'hs\n'
       + 'Plan: ' + plan;
 
@@ -294,18 +272,76 @@
   };
 
   window.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
-  /* Focus trap: mantene el Tab dentro del modal mientras está abierto */
-  window.addEventListener('keydown', function (e) {
-    if (e.key !== 'Tab' || !modal || !modal.classList.contains('active')) return;
-    var focusables = modal.querySelectorAll('button, input, select, textarea, a[href]');
-    if (!focusables.length) return;
-    var first = focusables[0];
-    var last = focusables[focusables.length - 1];
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  });
   document.addEventListener('click', function (e) {
     if (modal && e.target === modal) closeModal();
   });
 })();
 
+/* ---------- 2b. Hero rating fallback ----------
+   El pill de estrellas "4.9 en Google" es provisional: cuando el
+   widget de Elfsight del hero renderiza contenido real, se oculta. */
+(function () {
+  var pill = document.getElementById('hero-rating-fallback');
+  var hero = document.getElementById('hero-elfsight');
+  if (!pill || !hero) return;
+  function check() {
+    if (hero.childElementCount > 0 && hero.offsetHeight > 40) {
+      pill.style.display = 'none';
+      mo.disconnect();
+    }
+  }
+  var mo = new MutationObserver(check);
+  mo.observe(hero, { childList: true, subtree: true });
+  check();
+})();
+
+/* ---------- 10b. Focus trap del modal de reserva ---------- */
+(function () {
+  var modal = document.getElementById('schedule-modal');
+  if (!modal) return;
+  var lastFocused = null;
+
+  function focusables() {
+    var items = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    return Array.prototype.filter.call(items, function (el) {
+      return !el.disabled && (el.offsetWidth > 0 || el.offsetHeight > 0);
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab' || !modal.classList.contains('active')) return;
+    var items = focusables();
+    if (!items.length) return;
+    var first = items[0];
+    var last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  var originalOpen = window.openScheduleModal;
+  if (typeof originalOpen === 'function') {
+    window.openScheduleModal = function (el) {
+      lastFocused = document.activeElement;
+      originalOpen(el);
+    };
+  }
+
+  var originalClose = window.closeModal;
+  if (typeof originalClose === 'function') {
+    window.closeModal = function () {
+      originalClose();
+      if (lastFocused && typeof lastFocused.focus === 'function') { lastFocused.focus(); lastFocused = null; }
+    };
+  }
+})();
+
+/* ---------- 11. Reduced motion guard ---------- */
+(function () {
+  if (!window.matchMedia) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.addEventListener('play', function (e) {
+    if (reduce.matches && e.target && typeof e.target.pause === 'function') {
+      try { e.target.pause(); } catch (err) {}
+    }
+  }, true);
+})();
