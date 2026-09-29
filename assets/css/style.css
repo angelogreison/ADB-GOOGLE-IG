@@ -305,7 +305,7 @@ section{padding:110px 0;position:relative;}
 }
 .plan-picker-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px -20px rgba(61,43,31,.25);}
 .plan-picker-card .ic{font-size:2.2rem;margin-bottom:6px;}
-.plan-picker-card h3{font-size:1.2rem;margin-bottom:2px;}
+.plan-picker-card h3,.plan-picker-title{font-family:'Cormorant Garamond','Palatino Linotype',Palatino,serif;font-weight:600;letter-spacing:.3px;color:var(--ink);font-size:1.2rem;margin-bottom:2px;}
 .plan-picker-price{font-family:'Cormorant Garamond','Palatino Linotype',Palatino,serif;font-style:italic;font-weight:700;color:var(--terracotta);font-size:1.1rem;margin-bottom:12px;}
 .plan-picker-card .btn{margin-top:auto;}
 .plan-picker-card.modelado .ic{color:var(--olive);}
