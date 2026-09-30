@@ -43,6 +43,10 @@
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"></noscript>
+<!-- Facebook Pixel Code (sincrónico para que Meta lo valide) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1002053692646882');fbq('track','PageView');
+</script>
 <!-- Elfsight: NO se carga aquí; se carga lazy desde main.js cuando la sección entra en viewport -->
 <!-- CSP Report-Only para monitoreo sin bloquear (validar antes de pasar a enforced) -->
 <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://elfsightcdn.com https://core.service.elfsight.com https://apps.elfsight.com https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://*.facebook.com https://*.fbcdn.net https://www.google-analytics.com https://elfsightcdn.com https://apps-storage.elfsight.com https://lh3.googleusercontent.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://core.service.elfsight.com; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
