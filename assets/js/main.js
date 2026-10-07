@@ -2,7 +2,7 @@
    main.js — Artesana del Barro v20260915a
    ========================================================================== */
 
-/* ---------- 1. Deferred analytics (GA4 + Meta Pixel) ----------
+/* ---------- 1. Deferred analytics (GA4) ----------
    Loaded on first user interaction OR after 4s fallback. */
 (function () {
   var loaded = false;
@@ -22,18 +22,6 @@
     gtagScript.async = true;
     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-9HD0M84T4R';
     document.head.appendChild(gtagScript);
-
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1002053692646882');
-    fbq('track', 'PageView');
   }
 
   var fallbackTimer = setTimeout(loadAnalytics, 4000);
