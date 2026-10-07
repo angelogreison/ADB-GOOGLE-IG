@@ -130,61 +130,6 @@
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal, .reveal-scale, .stagger').forEach(function (el) { io.observe(el); });
 
-  /* ---------- 7. Counter animation ---------- */
-  var counters = document.querySelectorAll('.num[data-count]');
-  if (counters.length) {
-    var cio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        cio.unobserve(e.target);
-        var el = e.target;
-        var target = parseFloat(el.getAttribute('data-count'));
-        var decimals = parseInt(el.getAttribute('data-decimal') || '0');
-        var dur = 1600;
-        var start = performance.now();
-        function tick(now) {
-          var p = Math.min((now - start) / dur, 1);
-          var eased = 1 - Math.pow(1 - p, 3);
-          var val = target * eased;
-          el.textContent = decimals ? val.toFixed(decimals) : Math.round(val);
-          if (p < 1) requestAnimationFrame(tick);
-          else el.textContent = decimals ? target.toFixed(decimals) : target;
-        }
-        requestAnimationFrame(tick);
-      });
-    }, { threshold: 0.5 });
-    counters.forEach(function (c) { cio.observe(c); });
-  }
-
-  /* ---------- 8. Testimonials carousel ---------- */
-  var testTrack = document.getElementById('testTrack');
-  if (testTrack) {
-    var testCards = testTrack.querySelectorAll('.test-card');
-    var testDotsWrap = document.getElementById('testDots');
-    var testIndex = 0;
-
-    testCards.forEach(function (_, i) {
-      var dot = document.createElement('button');
-      dot.className = 'test-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Ir a la resena ' + (i + 1));
-      dot.addEventListener('click', function () { goToTest(i); });
-      testDotsWrap.appendChild(dot);
-    });
-    var testDots = testDotsWrap.querySelectorAll('.test-dot');
-
-    function goToTest(i) {
-      testIndex = (i + testCards.length) % testCards.length;
-      testTrack.style.transform = 'translateX(-' + (testIndex * 100) + '%)';
-      testDots.forEach(function (d, di) { d.classList.toggle('active', di === testIndex); });
-    }
-
-    var prevBtn = document.getElementById('testPrev');
-    var nextBtn = document.getElementById('testNext');
-    if (prevBtn) prevBtn.addEventListener('click', function () { goToTest(testIndex - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goToTest(testIndex + 1); });
-    setInterval(function () { goToTest(testIndex + 1); }, 7000);
-  }
-
   /* ---------- 9. FAQ accordion ---------- */
   document.querySelectorAll('.faq-q').forEach(function (btn) {
     btn.addEventListener('click', function () {
