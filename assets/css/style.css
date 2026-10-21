@@ -451,6 +451,9 @@ section{padding:110px 0;position:relative;}
 .price-tag{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px;}
 .price-val{font-family:'Cormorant Garamond','Palatino Linotype',Palatino,serif;font-size:2.6rem;font-weight:700;color:var(--ink);}
 .price-val span{font-size:.9rem;opacity:.7;font-family:'Montserrat',Arial,sans-serif;}
+.price-old{font-size:.5em;color:var(--taupe);opacity:.75;font-weight:600;margin-right:.3em;}
+.price-note{font-size:.8em;color:var(--clay);font-weight:600;}
+.price-offer{display:block;font-family:'Montserrat',Arial,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.5px;color:var(--clay);margin-top:8px;}
 
 /* ---------- GALLERY ---------- */
 .gallery{background:var(--sand);}

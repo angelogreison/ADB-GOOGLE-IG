@@ -33,7 +33,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/style.min.css?v=20261007b">
+<link rel="stylesheet" href="assets/css/style.min.css?v=20261021a">
 
 <!-- GA4 + Meta Pixel: cargados en assets/js/main.min.js?v=20261007b tras la primera interacción o 4s (ver comentario ahi) -->
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -82,14 +82,14 @@ src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"
       "name": "Plan Modelado — Modelado Manual",
       "courseMode": "onsite",
       "courseWorkload": "PT8H",
-      "offers": {"@type": "Offer", "price": "79000", "priceCurrency": "ARS"}
+      "offers": {"@type": "Offer", "price": "79000", "priceValidUntil": "2026-11-25", "priceCurrency": "ARS"}
     },
     {
       "@type": "CourseInstance",
       "name": "Plan Torno — Torno Alfarero",
       "courseMode": "onsite",
       "courseWorkload": "PT8H",
-      "offers": {"@type": "Offer", "price": "90000", "priceCurrency": "ARS"}
+      "offers": {"@type": "Offer", "price": "90000", "priceValidUntil": "2026-11-25", "priceCurrency": "ARS"}
     }
   ]
 }
@@ -192,13 +192,13 @@ src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"
       </div>
       <div class="day-col stagger-item">
         <h4>Miércoles</h4>
-        <div class="slot" data-category="Modelado" data-day="Miércoles" data-start="16:00" data-end="18:00" onclick="openScheduleModal(this)"><div class="t">16:00 - 18:00</div><div class="c">Modelado</div><span class="badge b-last">Último cupo</span></div>
+        <div class="slot slot-disabled" data-category="Modelado" data-day="Miércoles" data-start="16:00" data-end="18:00" aria-disabled="true"><div class="t">16:00 - 18:00</div><div class="c">Modelado</div><span class="badge b-full">Sin cupos</span></div>
         <div class="slot" data-category="Modelado" data-day="Miércoles" data-start="18:00" data-end="20:00" onclick="openScheduleModal(this)"><div class="t">18:00 - 20:00</div><div class="c">Modelado</div><span class="badge b-low">Pocos cupos</span></div>
       </div>
       <div class="day-col stagger-item">
         <h4>Jueves</h4>
         <div class="slot" data-category="Modelado" data-day="Jueves" data-start="15:30" data-end="17:30" onclick="openScheduleModal(this)"><div class="t">15:30 - 17:30</div><div class="c">Modelado</div><span class="badge b-last">Último cupo</span></div>
-        <div class="slot" data-category="Modelado" data-day="Jueves" data-start="18:00" data-end="20:00" onclick="openScheduleModal(this)"><div class="t">18:00 - 20:00</div><div class="c">Modelado</div><span class="badge b-last">Último cupo</span></div>
+        <div class="slot slot-disabled" data-category="Modelado" data-day="Jueves" data-start="18:00" data-end="20:00" aria-disabled="true"><div class="t">18:00 - 20:00</div><div class="c">Modelado</div><span class="badge b-full">Sin cupos</span></div>
       </div>
       <div class="day-col stagger-item">
         <h4>Viernes</h4>
@@ -240,7 +240,7 @@ src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"
           <li>App Tomoturnos para reprogramar clases</li>
         </ul>
         <div class="price-tag">
-          <div class="price-val">$79.000<span>/mes</span></div>
+          <div class="price-val"><s class="price-old">$82.000</s>$79.000<span>/mes</span><small class="price-offer">Oferta hasta el 25 de noviembre</small></div>
           <a href="#horarios" class="btn btn-primary">Quiero este plan</a>
         </div>
       </div>
@@ -257,7 +257,7 @@ src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"
           <li>Horneadas incluidas (hasta 18cm)</li>
         </ul>
         <div class="price-tag">
-          <div class="price-val">$90.000<span>/mes</span></div>
+          <div class="price-val"><s class="price-old">$93.500</s>$90.000<span>/mes</span><small class="price-offer">Oferta hasta el 25 de noviembre</small></div>
           <a href="#horarios" class="btn btn-primary">Quiero este plan</a>
         </div>
       </div>
@@ -271,11 +271,11 @@ src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"
         </thead>
         <tbody>
           <tr><th scope="row">Técnica</th><td>Modelado manual en mesa: pellizco, chorizo y plancha</td><td>Torno alfarero: centrar, abrir y levantar paredes</td></tr>
-          <tr><th scope="row">Precio</th><td>$79.000/mes</td><td>$90.000/mes</td></tr>
+          <tr><th scope="row">Precio</th><td><s class="price-old">$82.000</s> $79.000/mes <small>(oferta hasta el 25 de noviembre)</small></td><td><s class="price-old">$93.500</s> $90.000/mes <small>(oferta hasta el 25 de noviembre)</small></td></tr>
           <tr><th scope="row">Clases</th><td>4 por mes, de 2 horas cada una</td><td>4 por mes, de 2 horas cada una</td></tr>
           <tr><th scope="row">Materiales y esmaltes</th><td class="compare-yes">Incluidos</td><td class="compare-yes">Incluidos</td></tr>
           <tr><th scope="row">Horneadas</th><td class="compare-yes">Incluidas (piezas de hasta 18 cm)</td><td class="compare-yes">Incluidas (piezas de hasta 18 cm)</td></tr>
-          <tr><th scope="row">Clase de prueba</th><td>$27.000 <a href="clase-de-prueba.html">Reservar →</a></td><td>$37.000 <a href="clase-de-prueba.html">Reservar →</a></td></tr>
+          <tr><th scope="row">Clase de prueba</th><td><s class="price-old">$28.000</s> $27.000 <span class="price-note">(oferta hasta el 25/11)</span> <a href="clase-de-prueba.html">Reservar →</a></td><td><s class="price-old">$40.000</s> $37.000 <span class="price-note">(oferta hasta el 25/11)</span> <a href="clase-de-prueba.html">Reservar →</a></td></tr>
           <tr><th scope="row">Ideal si…</th><td>Querés crear vajilla y piezas con tus propias manos, a tu ritmo</td><td>Te atraen las piezas redondas y el desafío del barro en movimiento</td></tr>
         </tbody>
       </table>
