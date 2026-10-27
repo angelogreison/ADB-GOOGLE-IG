@@ -2,7 +2,7 @@
    main.js — Artesana del Barro v20260915a
    ========================================================================== */
 
-/* ---------- 1. Deferred analytics (GA4 + Meta Pixel) ----------
+/* ---------- 1. Deferred analytics (GA4) ----------
    Loaded on first user interaction OR after 4s fallback. */
 (function () {
   var loaded = false;
@@ -22,18 +22,6 @@
     gtagScript.async = true;
     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-9HD0M84T4R';
     document.head.appendChild(gtagScript);
-
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1002053692646882');
-    fbq('track', 'PageView');
   }
 
   var fallbackTimer = setTimeout(loadAnalytics, 4000);
@@ -142,61 +130,6 @@
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal, .reveal-scale, .stagger').forEach(function (el) { io.observe(el); });
 
-  /* ---------- 7. Counter animation ---------- */
-  var counters = document.querySelectorAll('.num[data-count]');
-  if (counters.length) {
-    var cio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        cio.unobserve(e.target);
-        var el = e.target;
-        var target = parseFloat(el.getAttribute('data-count'));
-        var decimals = parseInt(el.getAttribute('data-decimal') || '0');
-        var dur = 1600;
-        var start = performance.now();
-        function tick(now) {
-          var p = Math.min((now - start) / dur, 1);
-          var eased = 1 - Math.pow(1 - p, 3);
-          var val = target * eased;
-          el.textContent = decimals ? val.toFixed(decimals) : Math.round(val);
-          if (p < 1) requestAnimationFrame(tick);
-          else el.textContent = decimals ? target.toFixed(decimals) : target;
-        }
-        requestAnimationFrame(tick);
-      });
-    }, { threshold: 0.5 });
-    counters.forEach(function (c) { cio.observe(c); });
-  }
-
-  /* ---------- 8. Testimonials carousel ---------- */
-  var testTrack = document.getElementById('testTrack');
-  if (testTrack) {
-    var testCards = testTrack.querySelectorAll('.test-card');
-    var testDotsWrap = document.getElementById('testDots');
-    var testIndex = 0;
-
-    testCards.forEach(function (_, i) {
-      var dot = document.createElement('button');
-      dot.className = 'test-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Ir a la resena ' + (i + 1));
-      dot.addEventListener('click', function () { goToTest(i); });
-      testDotsWrap.appendChild(dot);
-    });
-    var testDots = testDotsWrap.querySelectorAll('.test-dot');
-
-    function goToTest(i) {
-      testIndex = (i + testCards.length) % testCards.length;
-      testTrack.style.transform = 'translateX(-' + (testIndex * 100) + '%)';
-      testDots.forEach(function (d, di) { d.classList.toggle('active', di === testIndex); });
-    }
-
-    var prevBtn = document.getElementById('testPrev');
-    var nextBtn = document.getElementById('testNext');
-    if (prevBtn) prevBtn.addEventListener('click', function () { goToTest(testIndex - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goToTest(testIndex + 1); });
-    setInterval(function () { goToTest(testIndex + 1); }, 7000);
-  }
-
   /* ---------- 9. FAQ accordion ---------- */
   document.querySelectorAll('.faq-q').forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -227,9 +160,9 @@
     var planDisplay = document.getElementById('m-plan-display');
     var cat = selectedSchedule.category.toLowerCase();
     if (cat.indexOf('modelado') !== -1) {
-      planDisplay.textContent = 'Plan Modelado ($79.000)';
+      planDisplay.textContent = 'Plan Modelado ($82.000)';
     } else if (cat.indexOf('alfarer') !== -1) {
-      planDisplay.textContent = 'Plan Torno ($90.000)';
+      planDisplay.textContent = 'Plan Torno ($93.500)';
     } else {
       planDisplay.textContent = 'Consultar Plan';
     }
