@@ -1,52 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://artesanadelbarro.com.ar/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/clase-modelado-manual-ceramica-caballito.webp</image:loc>
+      <image:caption>Manos dando forma a una cabeza de animal de barro gris con una herramienta de madera</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-ceramica-esmaltada-taller.webp</image:loc>
+      <image:caption>Estantes de madera con frascos con tapa, bolsas de material y piezas blancas en la parte baja</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/interior-taller-ceramica-caballito-almagro.webp</image:loc>
+      <image:caption>Grupo de personas trabajando en una mesa larga de madera, con estantes y bolsas de material al fondo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/mariana-parra-ceramista-taller-caballito.webp</image:loc>
+      <image:caption>Mariana Parra Corrales, ceramista y docente de Artesana del Barro, con delantal turquesa en el taller</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/planes.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/modelado.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/clase-modelado-manual-ceramica-caballito.webp</image:loc>
+      <image:caption>Manos dando forma a una cabeza de animal de barro gris con una herramienta de madera</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/torno-alfarero.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-hechas-en-torno-alfarero.webp</image:loc>
+      <image:caption>Personas trabajando en tornos alfareros con barro, en el taller de Caballito</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/alfareria.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/interior-taller-ceramica-caballito-almagro.webp</image:loc>
+      <image:caption>Grupo de personas trabajando en una mesa larga de madera, con estantes y bolsas de material al fondo</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/clase-de-prueba.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/primera-clase-ceramica-sin-experiencia.webp</image:loc>
+      <image:caption>Detalle de una cabeza de animal de barro gris en proceso de modelado a mano</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/regala-una-clase.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-ceramica-esmaltada-taller.webp</image:loc>
+      <image:caption>Estantes de madera con frascos con tapa, bolsas de material y piezas blancas en la parte baja</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/horneadas.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/horno-ceramica-horneado-para-terceros.webp</image:loc>
+      <image:caption>Vista desde arriba del interior de un horno de 70 litros con piezas de cerámica blancas y crema adentro</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/contacto.html</loc>
@@ -56,9 +96,41 @@
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/blog.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/primera-clase-ceramica-sin-experiencia.webp</image:loc>
+      <image:caption>Detalle de una cabeza de animal de barro gris en proceso de modelado a mano</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/modelado-manual-vs-torno-alfarero.webp</image:loc>
+      <image:caption>Tres personas modelando barro a mano en una mesa, con una figura de animal sin terminar en primer plano</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/mesa-herramientas-taller-caballito.webp</image:loc>
+      <image:caption>Mesa de trabajo con pinceles, herramientas y tazas de cerámica pintadas, con estantes de madera al fondo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-hechas-en-torno-alfarero.webp</image:loc>
+      <image:caption>Personas trabajando en tornos alfareros con barro, en el taller de Caballito</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/clase-modelado-manual-ceramica-caballito.webp</image:loc>
+      <image:caption>Manos dando forma a una cabeza de animal de barro gris con una herramienta de madera</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/interior-taller-ceramica-caballito-almagro.webp</image:loc>
+      <image:caption>Grupo de personas trabajando en una mesa larga de madera, con estantes y bolsas de material al fondo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/taller-de-ceramica-caballito.webp</image:loc>
+      <image:caption>Grupo de personas alrededor de una mesa de madera en el taller, una levantando el pulgar, con estantes de frascos al fondo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-ceramica-esmaltada-taller.webp</image:loc>
+      <image:caption>Estantes de madera con frascos con tapa, bolsas de material y piezas blancas en la parte baja</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/primera-clase-de-ceramica.html</loc>
@@ -74,7 +146,7 @@
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/etapas-de-la-ceramica.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -83,11 +155,5 @@
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://artesanadelbarro.com.ar/pautas-convivencia.html</loc>
-    <lastmod>2026-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>

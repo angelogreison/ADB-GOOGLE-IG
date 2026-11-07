@@ -31,7 +31,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/style.min.css?v=20261104b">
+<link rel="stylesheet" href="assets/css/style.min.css?v=20261021a">
 
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
@@ -53,38 +53,27 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".faq-q", ".faq-a"]},
   "mainEntity": [
     {
       "@type": "Question",
       "name": "¿Qué incluye la clase de regalo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Incluye 2 horas de clase en el taller de Caballito, todos los materiales (pasta, herramientas y esmaltes) y la horneada de la pieza. La persona que recibe el regalo solo tiene que venir con ganas de crear."
-      }
+      "acceptedAnswer": {"@type": "Answer", "text": "Incluye 2 horas de clase en el taller de Caballito, todos los materiales (pasta, herramientas y esmaltes) y la horneada de la pieza. La persona que recibe el regalo solo tiene que venir con ganas de crear."}
     },
     {
       "@type": "Question",
       "name": "¿Cuánto cuesta regalar una clase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Podés regalar por clase o por mes. Una clase de prueba de modelado cuesta $28.000 y la de torno alfarero $40.000; un mes de plan cuesta lo mismo que el plan elegido ($82.000 modelado, $93.500 torno)."
-      }
+      "acceptedAnswer": {"@type": "Answer", "text": "Podés regalar por clase o por mes. Una clase de prueba de modelado cuesta $28.000 y la de torno alfarero $40.000; un mes de plan cuesta lo mismo que el plan elegido ($82.000 modelado, $93.500 torno)."}
     },
     {
       "@type": "Question",
       "name": "¿Cómo recibe el regalo la persona?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Te enviamos una gift card digital para entregar cuando quieras. La persona nos escribe, elige la técnica (modelado manual o torno alfarero) y el turno que mejor le quede, y queda anotada."
-      }
+      "acceptedAnswer": {"@type": "Answer", "text": "Te enviamos una gift card digital para entregar cuando quieras. La persona nos escribe, elige la técnica (modelado manual o torno alfarero) y el turno que mejor le quede, y queda anotada."}
     },
     {
       "@type": "Question",
       "name": "¿La persona puede elegir el turno?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Hay turnos de lunes a sábado, de mañana y de noche, y quien recibe el regalo elige el que mejor le quede según la grilla de horarios."
-      }
+      "acceptedAnswer": {"@type": "Answer", "text": "Sí. Hay turnos de lunes a sábado, de mañana y de noche, y quien recibe el regalo elige el que mejor le quede según la grilla de horarios."}
     }
   ]
 }
@@ -95,7 +84,6 @@
 </script>
 </head>
 <body>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1002053692646882&ev=PageView&noscript=1"></noscript>
 
 <header class="nav" id="navbar">
   <div class="container nav-inner">
@@ -115,7 +103,7 @@
         <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         <span class="nav-wa-label">Contáctanos</span>
       </a>
-      <button type="button" class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -158,7 +146,7 @@
         <p style="font-size:.85rem;opacity:.75;">¿No sabés qué técnica elegir? <a href="modelado-manual-vs-torno-alfarero.html" style="color:var(--terracotta);text-decoration:underline;">Mirá la diferencia entre modelado manual y torno alfarero</a>.</p>
       </div>
       <div class="firing-img reveal-scale">
-        <img src="assets/piezas-ceramica-esmaltada-taller.webp" alt="Piezas de cerámica esmaltadas hechas en el taller de Caballito" srcset="assets/piezas-ceramica-esmaltada-taller-480w.webp 480w, assets/piezas-ceramica-esmaltada-taller-768w.webp 768w, assets/piezas-ceramica-esmaltada-taller.webp 1842w" sizes="(max-width:768px) 100vw, 50vw" width="1842" height="1842" loading="lazy">
+        <img src="assets/piezas-ceramica-esmaltada-taller.webp" alt="Estantes de madera con frascos con tapa, bolsas de material y piezas blancas en la parte baja" srcset="assets/piezas-ceramica-esmaltada-taller-480w.webp 480w, assets/piezas-ceramica-esmaltada-taller-768w.webp 768w, assets/piezas-ceramica-esmaltada-taller.webp 1842w" sizes="(max-width:768px) 100vw, 50vw" width="1842" height="1842" loading="lazy">
       </div>
     </div>
   </div>
@@ -231,19 +219,19 @@
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button type="button" class="faq-q"><span>¿Qué incluye la clase de regalo?</span><span class="plus">+</span></button>
+        <button class="faq-q"><span>¿Qué incluye la clase de regalo?</span><span class="plus">+</span></button>
         <div class="faq-a"><p>Incluye 2 horas de clase en el taller de Caballito, todos los materiales (pasta, herramientas y esmaltes) y la horneada de la pieza. La persona que recibe el regalo solo tiene que venir con ganas de crear.</p></div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q"><span>¿Cuánto cuesta regalar una clase?</span><span class="plus">+</span></button>
+        <button class="faq-q"><span>¿Cuánto cuesta regalar una clase?</span><span class="plus">+</span></button>
         <div class="faq-a"><p>Podés regalar por clase o por mes. Una clase de prueba de modelado cuesta <strong>$28.000</strong> y la de torno alfarero <strong>$40.000</strong>; un mes de plan cuesta lo mismo que el plan elegido (<strong>$82.000</strong> modelado, <strong>$93.500</strong> torno).</p></div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q"><span>¿Cómo recibe el regalo la persona?</span><span class="plus">+</span></button>
+        <button class="faq-q"><span>¿Cómo recibe el regalo la persona?</span><span class="plus">+</span></button>
         <div class="faq-a"><p>Te enviamos una gift card digital para entregar cuando quieras. La persona nos escribe, elige la técnica (modelado manual o torno alfarero) y el turno que mejor le quede, y queda anotada.</p></div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q"><span>¿La persona puede elegir el turno?</span><span class="plus">+</span></button>
+        <button class="faq-q"><span>¿La persona puede elegir el turno?</span><span class="plus">+</span></button>
         <div class="faq-a"><p>Sí. Hay turnos de lunes a sábado, de mañana y de noche, y quien recibe el regalo elige el que mejor le quede según la <a href="planes.html#horarios" style="color:var(--terracotta);text-decoration:underline;">grilla de horarios</a>.</p></div>
       </div>
     </div>
@@ -302,7 +290,7 @@
 
 <div class="sticky-cta"><a href="https://wa.me/5491156206435?text=%C2%A1Hola%20Mariana!%20Quiero%20regalar%20una%20clase%20de%20cer%C3%A1mica.%20%F0%9F%8E%81" target="_blank" rel="noopener noreferrer">Regalar una clase</a></div>
 
-<script src="assets/js/main.min.js?v=20261104a" defer></script>
+<script src="assets/js/main.min.js?v=20261007b" defer></script>
 </body>
 </html>
 

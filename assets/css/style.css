@@ -12,6 +12,7 @@
   --olive-light:#A7B384;
   --white:#FFFDFC;
   --border:#CBBFA9;
+  --ochre:#C8960C;
   --petroleum:#356469;
   --petroleum-dark:#1A4F54;
   --petroleum-light:#6FA0A5;
@@ -334,6 +335,8 @@ section{padding:110px 0;position:relative;}
 .about-gallery .g1{grid-row:span 2;height:100%;}
 .about-gallery .g2, .about-gallery .g3{height:220px;}
 .about-gallery .g1 img,.about-gallery .g2 img,.about-gallery .g3 img{height:100%;}
+.about-gallery figure{position:relative;}
+.about-cap{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 14px;color:#fff;font-size:.85rem;line-height:1.4;background:linear-gradient(transparent,rgba(61,43,31,.8));border-radius:0 0 var(--radius) var(--radius);}
 
 /* ---------- WHY ---------- */
 .why{background:var(--sand);}

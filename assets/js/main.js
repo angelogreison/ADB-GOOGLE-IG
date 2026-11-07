@@ -1,5 +1,5 @@
 /* ==========================================================================
-   main.js — Artesana del Barro v20261104a
+   main.js — Artesana del Barro v20260915a
    ========================================================================== */
 
 /* ---------- 1. Deferred analytics (GA4) ----------
@@ -108,19 +108,16 @@
   var burger = document.getElementById('burger');
   var menu = document.getElementById('mobileMenu');
   if (burger && menu) {
-    // inert quita los enlaces del orden de tabulación cuando el menú está cerrado
     burger.addEventListener('click', function () {
       var isOpen = menu.classList.toggle('open');
       burger.setAttribute('aria-expanded', String(isOpen));
       menu.setAttribute('aria-hidden', String(!isOpen));
-      menu.inert = !isOpen;
     });
     menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         menu.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
         menu.setAttribute('aria-hidden', 'true');
-        menu.inert = true;
       });
     });
   }
@@ -173,7 +170,6 @@
     document.getElementById('modal-form').reset();
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
-    modal.inert = false;
     var firstInput = modal.querySelector('input');
     if (firstInput) setTimeout(function () { firstInput.focus(); }, 50);
   };
@@ -182,7 +178,6 @@
     if (modal) {
       modal.classList.remove('active');
       modal.setAttribute('aria-hidden', 'true');
-      modal.inert = true;
     }
   };
 
