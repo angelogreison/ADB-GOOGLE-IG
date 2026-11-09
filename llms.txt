@@ -29,12 +29,12 @@ En búsquedas frecuentes, "curso de cerámica", "clases de cerámica" y "taller 
 
 Clases de lunes a sábado por turnos. Domingos cerrado. Los cupos cambian: la grilla actualizada está en https://artesanadelbarro.com.ar/planes.html#horarios
 
-- Lunes: 14:00-16:00 Modelado (Pamela), 16:00-18:00 Alfarería (Mariana), 18:30-20:30 Modelado (Mariana), 18:30-20:30 Alfarería con experiencia previa.
-- Martes: 10:30-12:30 Alfarería (Mariana), 18:30-20:30 Modelado (Mariana), 18:30-20:30 Alfarería (Mariana).
-- Miércoles: 16:00-18:00 Modelado (Pame), 18:00-20:00 Modelado (Pame).
-- Jueves: 15:30-17:30 Modelado (Mar), 18:00-20:00 Modelado (Mar).
-- Viernes: 14:00-16:00 Alfarería (Giselle), 18:30-20:30 Modelado (Mariana).
-- Sábados: 11:00-13:00 Modelado (Mariana).
+- Lunes: 14:00-16:00 Modelado, 16:00-18:00 Alfarería, 18:30-20:30 Modelado, 18:30-20:30 Alfarería con experiencia previa.
+- Martes: 10:30-12:30 Alfarería, 18:30-20:30 Modelado, 18:30-20:30 Alfarería.
+- Miércoles: 16:00-18:00 Modelado, 18:00-20:00 Modelado.
+- Jueves: 15:30-17:30 Modelado, 18:00-20:00 Modelado.
+- Viernes: 14:00-16:00 Alfarería, 18:30-20:30 Modelado.
+- Sábados: 11:00-13:00 Modelado, 14:00-16:00 Modelado.
 
 ## Páginas
 
