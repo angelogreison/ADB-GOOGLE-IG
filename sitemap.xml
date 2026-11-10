@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://artesanadelbarro.com.ar/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -23,14 +23,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/planes.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://artesanadelbarro.com.ar/planes-y-horarios.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/modelado.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/clases-modelado-a-mano.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -39,18 +39,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/torno-alfarero.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/clases-torno-alfarero.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-hechas-en-torno-alfarero.webp</image:loc>
+      <image:loc>https://artesanadelbarro.com.ar/assets/clases-torno-alfarero-caballito.webp</image:loc>
       <image:caption>Personas trabajando en tornos alfareros con barro, en el taller de Caballito</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/alfareria.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/clases-de-ceramica-y-alfareria.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -59,8 +59,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/clase-de-prueba.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/clase-de-prueba-ceramica.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -69,8 +69,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/regala-una-clase.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/regalar-clase-de-ceramica.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -79,24 +79,24 @@
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/horneadas.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/horneado-de-piezas-para-ceramistas.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://artesanadelbarro.com.ar/assets/horno-ceramica-horneado-para-terceros.webp</image:loc>
+      <image:loc>https://artesanadelbarro.com.ar/assets/horno-ceramica-horneado-para-ceramistas.webp</image:loc>
       <image:caption>Vista desde arriba del interior de un horno de 70 litros con piezas de cerámica blancas y crema adentro</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/contacto.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <loc>https://artesanadelbarro.com.ar/contacto-y-ubicacion.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/blog.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/blog-ceramica.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -112,7 +112,7 @@
       <image:caption>Mesa de trabajo con pinceles, herramientas y tazas de cerámica pintadas, con estantes de madera al fondo</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://artesanadelbarro.com.ar/assets/piezas-hechas-en-torno-alfarero.webp</image:loc>
+      <image:loc>https://artesanadelbarro.com.ar/assets/clases-torno-alfarero-caballito.webp</image:loc>
       <image:caption>Personas trabajando en tornos alfareros con barro, en el taller de Caballito</image:caption>
     </image:image>
     <image:image>
@@ -134,25 +134,25 @@
   </url>
   <url>
     <loc>https://artesanadelbarro.com.ar/primera-clase-de-ceramica.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/modelado-manual-vs-torno-alfarero.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://artesanadelbarro.com.ar/modelado-a-mano-vs-torno-alfarero.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/etapas-de-la-ceramica.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <loc>https://artesanadelbarro.com.ar/etapas-del-proceso-de-la-ceramica.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://artesanadelbarro.com.ar/que-se-hace-en-torno-alfarero.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://artesanadelbarro.com.ar/que-se-hace-en-el-torno.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
